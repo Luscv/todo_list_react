@@ -1,0 +1,9 @@
+.card{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.checkbox{
+    max-width: max-content;
+}
