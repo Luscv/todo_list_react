@@ -1,13 +1,14 @@
-import styles from './styles/task.module.css'
 
-const Task = () => {
+
+const Task = ({task, onDelete}) => {
     return(
     <>
-    <div className="flex ">
-        <input type="checkbox" checked={false} className={styles.checkbox}></input>
-        <h3>task teste</h3>
-        <button>Delete</button>
-    </div> 
+    <li key={task.id}>
+        <div className="flex justify-between items-center gap-4 m-4">
+            <h3>{task.text}</h3>
+            <button onClick={onDelete}>Delete</button>
+        </div> 
+    </li>
     </>
     )
 }
